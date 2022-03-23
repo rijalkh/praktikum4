@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script src="../jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".out").click(function () {
+          $("#foto1").fadeOut("slow");
+        });
+
+        $(".in").click(function () {
+          $("#foto1").fadeIn("slow");
+        });
+
+        $(".fade-to").click(function () {
+          $("#foto1").fadeTo("slow", 0.3);
+        });
+      });
+    </script>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      img {
+        width: 300px;
+        height: 400px;
+      }
+
+      button {
+        background-color: rgb(184, 5, 5);
+        color: white;
+        padding: 10px;
+        border-radius: 12px;
+        border-width: 0;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="in">Fade In</button>
+    <button class="out">Fade Out</button>
+    <button class="fade-to">Fade to 0.3</button>
+    <p><img id="foto1" src="foto1.jpg" alt="" /></p>
+  </body>
+</html>
