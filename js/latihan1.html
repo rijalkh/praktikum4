@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="../jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".sembunyi1").click(function () {
+          $("#foto1").hide("slow");
+        });
+        $(".sembunyi2").click(function () {
+          $("#foto2").hide("slow");
+        });
+        $(".tampil1").click(function () {
+          $("#foto1").show("slow");
+        });
+        $(".tampil2").click(function () {
+          $("#foto2").show("slow");
+        });
+      });
+    </script>
+    <style>
+      img {
+        width: 300px;
+        height: 400px;
+      }
+
+      body {
+        text-align: center;
+        margin-top: 70px;
+      }
+
+      button {
+        background-color: rgb(184, 5, 5);
+        color: white;
+        padding: 10px;
+        border-radius: 12px;
+        border-width: 0;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="sembunyi1">Sembunyikan</button>
+    <button class="tampil1">Tampilkan</button>
+    <p><img id="foto1" src="foto1.jpg" alt="" /></p>
+    <button class="sembunyi2">Sembunyikan</button>
+    <button class="tampil2">Tampilkan</button>
+    <p><img id="foto2" src="foto2.jpg" alt="" /></p>
+  </body>
+</html>
